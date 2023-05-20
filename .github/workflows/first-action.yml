@@ -1,0 +1,17 @@
+name: First Workflow
+# You can add as many workflow as you want (it works with a .yml file)
+
+# On which events this work is triggered
+on: workflow_dispatch # dispatch is manually triggered
+
+# which works should be done
+jobs: # key-value
+  first-job:
+    runs-on: ubuntu-latest # key-value
+    steps: # key-value
+      - name: print greeting # key-value
+        run: echo "Hello"
+        
+      - name: Print goodby
+        run: echo "Done - Bye"
+    
